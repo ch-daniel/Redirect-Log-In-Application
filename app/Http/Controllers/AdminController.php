@@ -29,6 +29,9 @@ class AdminController extends Controller
         $key = env('API_CONFIDENCE_KEY');
 
         $data = request();
+        if ($data['coins'] == NULL) {
+            return redirect('/dashboard');
+        }
         // $data = request()->validate([
         //     'coins' => 'digits:8'
         // ], [
