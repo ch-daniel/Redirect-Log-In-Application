@@ -22,5 +22,11 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         \App\Models\User::factory()->create();
+
+        $user = User::create([
+            'username' => "user",
+            'email' => "user@u.u",
+            'password' => bcrypt('password')
+        ]);
     }
 }
