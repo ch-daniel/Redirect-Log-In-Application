@@ -41,7 +41,9 @@ Run the following commands in directory “app1”
 
  
 php artisan migrate:fresh
+
 php artisan db:seed
+
 php artisan serve
  
 
@@ -58,6 +60,7 @@ In a separate terminal run the following commands in directory “app2”
 
  
 php artisan migrate:fresh
+
 php artisan serve --port=8080
  
 
